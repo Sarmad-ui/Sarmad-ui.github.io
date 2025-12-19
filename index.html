@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+
+  <!-- Linking External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="fade-in delay-1">
+      <div class="avatar">
+        <img src="C:\Users\sarma\Downloads\WhatsApp Image 2025-12-06 at 3.30.15 PM.jpeg" alt="Profile">
+      </div>
+
+      <div class="hero">
+        <div class="name">Muhammad Sarmad</div>
+        <div class="tag">Web Developer • Data Scientist • Content Writer</div>
+        <div class="cta">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="btn secondary" href="#projects">See Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card fade-in delay-2" id="about">
+          <h2>About Me</h2>
+          <p>
+            I build polished, accessible, and high-performance websites. My approach blends clean visuals with solid frontend code in HTML and CSS.
+            <br>Moreover, I am a Data Scientist and love working with data. I have a strong command of content writing and create all content without using AI.
+          </p>
+          <div style="margin-top:12px;color:var(--muted)">
+            Location: Pakistan • Available for remote work
+          </div>
+        </section>
+
+        <section class="card fade-in delay-2" id="skills" style="margin-top:20px">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill"><div class="label">HTML & CSS</div><div class="progress"><div class="bar" style="width:92%"></div></div></div>
+            <div class="skill"><div class="label">MS Excel</div><div class="progress"><div class="bar" style="width:84%"></div></div></div>
+            <div class="skill"><div class="label">Responsive Design</div><div class="progress"><div class="bar" style="width:90%"></div></div></div>
+            <div class="skill"><div class="label">Content Writing</div><div class="progress"><div class="bar" style="width:80%"></div></div></div>
+            <div class="skill"><div class="label">C++ Programming</div><div class="progress"><div class="bar" style="width:80%"></div></div></div>
+          </div>
+        </section>
+
+        <section class="card fade-in delay-3" id="projects" style="margin-top:20px">
+          <h2>Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Animated Portfolio Template</h3>
+              <p>A slick single-page portfolio with glassmorphism and animated cards.</p>
+            </article>
+            <article class="project">
+              <h3>Content Writing</h3>
+              <p>Completed impactful content writing projects including a school magazine.</p>
+            </article>
+            <article class="project">
+              <h3>C++ Programming</h3>
+              <p>Developed several C++ projects showcasing logical problem-solving.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card fade-in delay-3" style="margin-top:20px">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="time-item">
+              <h4>Freelancer (2023–Present)</h4>
+              <p>Delivered portfolio sites and landing pages for local businesses.</p>
+            </div>
+            <div class="time-item">
+              <h4>Freelancer (2023–Present)</h4>
+              <p>Completed content-writing projects using original creative skills.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card fade-in delay-3" style="margin-top:20px">
+          <h2>Achievements & Certifications</h2>
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Responsive Web Design — freeCodeCamp</li>
+            <li>Data Science Certificate — Coursera</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside class="right-col">
+        <div class="card fade-in delay-2" id="contact">
+          <h2>Contact</h2>
+          <div class="contact">
+            <p>Email: bsdsf25m041@pu.edu.pk</p>
+            <p>Phone #: 0323 8851703</p>
+          </div>
+        </div>
+
+        <div class="card fade-in delay-2">
+          <h2>Services I Offer</h2>
+          <ul class="services">
+            <li>Custom Website Design</li>
+            <li>Content Writing</li>
+            <li>MS Excel</li>
+            <li>Portfolio & Resume Websites</li>
+            <li>Landing Page Development</li>
+            <li>Story Writing</li>
+            <li>Novel Writing</li>
+            <li>Interactive Web Animations</li>
+          </ul>
+        </div>
+
+        <div class="card fade-in delay-2">
+          <h2>Testimonials</h2>
+          <p>"Delivered a beautiful website on time — great communication." — Client</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>© 2025 My Portfolio • Built with care</footer>
+
+  </div>
+
+  <!-- Script -->
+  <script>
+    window.addEventListener('load', ()=>{
+      document.querySelectorAll('.bar').forEach(b=>{
+        const w=b.style.width;
+        b.style.width='0';
+        setTimeout(()=>b.style.width=w,150);
+      });
+    });
+  </script>
+</body>
+</html>
